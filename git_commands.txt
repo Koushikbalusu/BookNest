@@ -1,0 +1,65 @@
+GIT COMMANDS USED IN THIS ASSIGNMENT
+====================================
+
+mkdir <project>
+Creates the project folder.
+
+cd <project>
+Moves into the project folder.
+
+git init
+Initializes a new, empty Git repository in the current folder.
+
+git branch -M main
+Renames the current branch to main.
+
+git add <file>
+Stages the selected file so it is included in the next commit.
+
+git commit -m "message"
+Records the staged changes as a commit with a descriptive message.
+
+git branch feature
+Creates a new branch named feature.
+
+git switch feature
+Switches the working directory to the feature branch.
+
+git switch main
+Switches the working directory back to the main branch.
+
+git merge --no-ff feature -m "message"
+Merges feature into the current branch and always creates a merge commit, so the branch activity stays visible in history.
+
+git log --oneline --graph --decorate --all
+Shows a compact commit history as a graph with branch names and merges.
+
+git log --oneline -3
+Shows only the last three commits in one-line format.
+
+git status --short
+Shows a concise summary of modified, staged and untracked files.
+
+git status
+Shows the full state of the working tree (used to confirm it is clean).
+
+git check-ignore -v <path>
+Shows which .gitignore rule causes a file or folder to be ignored.
+
+git revert --no-edit HEAD
+Undoes the latest commit by creating a new commit that reverses it; history is preserved.
+
+git remote add origin <URL>
+Connects the local repository to the GitHub repository under the name origin.
+
+git remote -v
+Lists the remote repositories and their URLs.
+
+git push -u origin main
+Uploads the main branch to GitHub and sets it as the upstream branch.
+
+git push -u origin feature
+Uploads the feature branch to GitHub and sets it as the upstream branch.
+
+git push
+Uploads new commits on the current branch to its upstream branch on GitHub.
